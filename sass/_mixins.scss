@@ -1,0 +1,14 @@
+// BREAKPOINTS
+// Mobile-S(375px), Mobile-L(414px), Tablet(1024px), Desktop(1440px)
+$breakpoints-up: (
+  "smobile": "23.4375em",
+  "mobile": "25.875em",
+  "tablet": "64em",
+   "desktop": "90em",
+);
+
+@mixin breakpoint-up($size) {
+  @media (min-width: map-get($breakpoints-up, $size )) {
+    @content;
+  }
+}
