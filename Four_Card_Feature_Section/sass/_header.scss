@@ -3,4 +3,8 @@ header {
   text-align: center;
   margin: 5.3125rem auto;
   max-width: 31.25rem;
+
+  @include breakpoint-down(small) {
+    padding: 20px;
+  }
 }
