@@ -1,3 +1,42 @@
 html {
   font-size: 100%;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 1.125rem; // font size for body copy is 18px
+
+  text-align: center;
+
+  margin: 66px 190px 22px;
+
+}
+
+.container{
+  
+}
+
+p{
+  font-size: 0.75rem;
+}
+
+.btnIos{
+  background-color: $strongCyan;
+}
+
+.btnMac{
+  background-color: $lightBlue;
+}
+
+.btnIos, .btnMac{
+  padding: 10px;
+  height: 30px;
+  width: 130px;
+  border: none;
+  border-radius: 100px;
+  // font-weight: 600;
+}
