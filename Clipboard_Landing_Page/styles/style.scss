@@ -1,4 +1,9 @@
+// GLOBAL
 @import "variables";
+@import "mixins";
+@import "container";
 
+// SECTIONS
 @import "global";
-@import "header";
+@import "buttons";
+@import "hero";

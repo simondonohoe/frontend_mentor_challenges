@@ -1,0 +1,39 @@
+button {
+  position: relative;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: white;
+  border: none;
+  border-radius: 30px;
+
+  padding: 16px 40px;
+  cursor: pointer;
+
+  transition: all 150ms ease-in-out;
+
+  &.btnIos {
+    background-color: $strongCyan;
+    border-bottom: 3px solid darken($strongCyan, 4%);
+    margin-bottom: 20px;
+    
+    @include breakpoint(tablet) {
+      margin-bottom: 0px;
+      margin-right: 16px;
+    }
+
+    &:hover {
+      background-color: lighten($strongCyan, 3%);
+      // box-shadow: 0px 4px 14px rgba($strangCyan, 0.25);
+    }
+  }
+
+  &.btnMac {
+    background-color: $lightBlue;
+    border-bottom: 3px solid darken($lightBlue, 4%);
+
+    &:hover {
+      background-color: lighten($lightBlue, 3%);
+      // box-shadow: 0px 4px 14px rgba($lightBlue, 0.25);
+    }
+  }
+}

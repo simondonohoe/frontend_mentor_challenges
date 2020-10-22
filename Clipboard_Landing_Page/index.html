@@ -10,63 +10,84 @@
   <title>Frontend Mentor | Clipboard landing page</title>
 </head>
 <body>
-<header>
-  <div class="container">
-    <img src="./images/logo.svg"/>
-    <h1>A history of everything you copy</h1>
-    <p>Clipboard allows you to track and organize everything you 
-      copy. Instantly access your clipboard on all your devices.</p>
-    <button class="btnIos">Download for iOS</button>
-    <button class="btnMac">Download for Mac</button>
-  </div>
-</header>
-
-<section class="snippets">
-  <h2>Keep track of your snippets</h2>
-  <p>Clipboard instantly stores any item you copy in the cloud, 
-    meaning you can access your snippets immediately on all your 
-    devices. Our Mac and iOS apps will help you organize everything.
-  </p>
-  <div class="grid">
-    <img src="./images/image-computer.png" >
-    <div class="topicOne">
-      <h3>Quick Search</h3>
-      <p>Easily search your snippets by content, category, web address, application, and more.</p>
+  <!--HERO SECTION -->
+  <section class="hero container">
+      <img class="hero__logo" src="./images/logo.svg" width="125"/>
+      <h1>A history of<br/> everything you copy</h1>
+      <p>Clipboard allows you to track and organize everything you 
+        copy. Instantly access your clipboard on all your devices.</p>
+      <div class="hero__cta">
+        <button class="btnIos">Download for iOS</button>
+        <button class="btnMac">Download for Mac</button>
     </div>
-    <div class="topicTwo">
-      <h3>iCloud Sync</h3>
-      <p>Instantly saves and syncs snippets across all your devices.</p>
+  </section>
+
+  <section class="snippets">
+    <div>
+      <h2>Keep track of your snippets</h2>
+      <p>Clipboard instantly stores any item you copy in the cloud, 
+      meaning you can access your snippets immediately on all your 
+      devices. Our Mac and iOS apps will help you organize everything.
+      </p>
+      <div class="grid">
+        <img src="./images/image-computer.png" >
+        <div class="topicOne">
+          <h3>Quick Search</h3>
+          <p>Easily search your snippets by content, category, web address, application, and more.</p>
+        </div>
+        <div class="topicTwo">
+          <h3>iCloud Sync</h3>
+          <p>Instantly saves and syncs snippets across all your devices.</p>
+        </div>
+        <div class="topicThree">
+          <h3>Complete History</h3>
+          <p>Retrieve any snippets from the first moment you started using the app.</p>
+        </div>
+      </div>
     </div>
-    <div class="topicThree">
-      <h3>Complete History</h3>
-      <p>Retrieve any snippets from the first moment you started using the app.</p>
+  </section>
+
+    
+  <section class="middle">
+    <div>
+      <div>
+        <h2>Access Clipboard anywhere</h2> 
+        <p>Whether you’re on the go, or at your computer, you can access all your Clipboard snippets in a few simple clicks.</p>
+      </div>
+
+      <img src="./images/image-devices.png">
+
+      <div>
+        <h2>Supercharge your workflow</h2> 
+        <p>We’ve got the tools to boost your productivity.</p>
+      </div>
+
+      <div>
+        <h3>Create blacklists</h3>
+        <p>Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
+      </div>
+
+      <div>
+        <h3>Plain text snippets</h3>
+        <p>Remove unwanted formatting from copied text for a consistent look.</p>
+      </div>
+
+      <div>
+        <h3>Sneak preview</h3>
+        <p>Quick preview of all snippets on your Clipboard for easy access.</p>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-  
-<section class="middle">
-  <h2>Access Clipboard anywhere</h2> 
-  <p>Whether you’re on the go, or at your computer, you can access all your Clipboard snippets in a few simple clicks.</p>
-
-  <img src="./images/image-devices.png">
-  <h2>Supercharge your workflow</h2> 
-  <p>We’ve got the tools to boost your productivity.</p>
-  
-  <h3>Create blacklists</h3>
-  <p>Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
-
-  <h3>Plain text snippets</h3>
-  <p>Remove unwanted formatting from copied text for a consistent look.</p>
-  
-  <h3>Sneak preview</h3>
-  <p>Quick preview of all snippets on your Clipboard for easy access.</p>
-
-</section>
-
-<section class="partners">
-
-</section>
+  <section class="partners">
+    <div>
+      <img src="./images/logo-google.png">
+      <img src="./images/logo-ibm.png">
+      <img src="./images/logo-microsoft.png">
+      <img src="./images/logo-hp.png">
+      <img src="./images/logo-vector-graphics.png">
+    </div>
+  </section>
 
   <section>
     <div class="container">
@@ -85,7 +106,7 @@
   Install Guide
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">Simon Donohoe</a>.
     </p>
   </footer>
 </body>
