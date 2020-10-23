@@ -10,13 +10,17 @@ button {
   cursor: pointer;
 
   transition: all 150ms ease-in-out;
-
+ 
+  @include breakpoint-up(mobile) {
+    width: 100%;
+  }
+  
   &.btnIos {
     background-color: $strongCyan;
     border-bottom: 3px solid darken($strongCyan, 4%);
     margin-bottom: 20px;
-    
-    @include breakpoint(tablet) {
+
+    @include breakpoint-down(tablet) {
       margin-bottom: 0px;
       margin-right: 16px;
     }

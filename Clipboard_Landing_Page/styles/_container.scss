@@ -5,26 +5,27 @@
   text-align: center;
 
   // padding mobile and small tablet
-  max-width: 700px;
+  // max-width: 700px;
   padding-left: 32px;
   padding-right: 32px;
-  padding-bottom: 157px;
+  // padding-bottom: 157px;
+  padding-bottom: 80px;
 
   // padding large tablet and desktop
   // @include breakpoint(tablet) {
   //   padding-bottom: 142px;
   // }
 
-  @include breakpoint(tablet) {
-    max-width: 1000px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 142px;
-  }
-  @include breakpoint(desktop) {
-    max-width: 1440px;
-    padding-left: 200px;
-    padding-right: 200px;
-    padding-bottom: 142px;
-  }
+  // @include breakpoint-down(tablet) {
+  //   // max-width: 1000px;
+  //   padding-left: 100px;
+  //   padding-right: 100px;
+  //   padding-bottom: 142px;
+  // }
+  // @include breakpoint-down(desktop) {
+  //   // max-width: 1440px;
+  //   padding-left: 200px;
+  //   padding-right: 200px;
+  //   padding-bottom: 142px;
+  // }
 }

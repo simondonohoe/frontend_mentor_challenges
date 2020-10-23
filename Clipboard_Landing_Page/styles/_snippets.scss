@@ -1,0 +1,52 @@
+.snippets {
+  &__columns {
+    position: relative;
+    width: 100%;
+
+    @include breakpoint-down(largeTablet) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__image,
+  &__features {
+    @include breakpoint-down(largeTablet) {
+      flex: 1;
+    }
+  }
+
+  &__image {
+    text-align: center;
+    margin-bottom: 60px;
+
+    @include breakpoint-down(largeTablet) {
+      margin-bottom: 0px;
+
+      margin-right: 55px;
+    }
+
+    img {
+      width: 100%;
+      max-width: 500px;
+
+      @include breakpoint-down(largeTablet) {
+        max-width: none;
+        transform: translateX(-55px);
+      }
+    }
+  }
+  &__features {
+    text-align: center;
+
+    @include breakpoint-down(largeTablet) {
+      margin-left: 55px;
+      text-align: left;
+    }
+
+    p {
+      display: inline-block;
+      max-width: 340px;
+    }
+  }
+}

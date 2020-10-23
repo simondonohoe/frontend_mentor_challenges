@@ -10,26 +10,9 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  max-width: 700px;
   padding-left: 32px;
   padding-right: 32px;
-  padding-bottom: 157px;
-}
-@media (min-width: 700px) {
-  .container {
-    max-width: 1000px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 142px;
-  }
-}
-@media (min-width: 1440px) {
-  .container {
-    max-width: 1440px;
-    padding-left: 200px;
-    padding-right: 200px;
-    padding-bottom: 142px;
-  }
+  padding-bottom: 80px;
 }
 
 html {
@@ -49,8 +32,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Bai Jamjuree", sans-serif;
-  font-size: 1.125rem;
-  line-height: 1.6;
+  color: #9fabb2;
 }
 
 h1,
@@ -61,17 +43,62 @@ h3 {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.375rem;
   margin-bottom: 25px;
 }
 @media (min-width: 700px) {
+  h1 {
+    font-size: 2.75rem;
+  }
   h1 br {
     display: none;
   }
 }
 
+h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+@media (min-width: 700px) {
+  h2 {
+    font-size: 2.25rem;
+  }
+}
+
+h3 {
+  font-size: 1.375rem;
+}
+@media (min-width: 700px) {
+  h3 {
+    font-size: 1.625rem;
+  }
+}
+
 p {
-  color: #9fabb2;
+  margin-top: 0px;
+}
+
+p.large {
+  font-size: 1.25rem;
+}
+
+p.medium {
+  font-size: 1.125rem;
+  line-height: 1.75;
+}
+
+p.small {
+  font-size: 1rem;
+}
+
+.margin-bottom {
+  margin-bottom: 50px;
+  line-height: 1.6;
+}
+
+.large-margin-bottom {
+  margin-bottom: 80px;
+  line-height: 1.6;
 }
 
 button {
@@ -85,6 +112,11 @@ button {
   cursor: pointer;
   -webkit-transition: all 150ms ease-in-out;
   transition: all 150ms ease-in-out;
+}
+@media (max-width: 699px) {
+  button {
+    width: 100%;
+  }
 }
 button.btnIos {
   background-color: #26baa4;
@@ -123,21 +155,60 @@ button.btnMac:hover {
 .hero__logo {
   margin-bottom: 70px;
 }
-.hero__cta {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+
+.snippets__columns {
+  position: relative;
+  width: 100%;
 }
-@media (min-width: 700px) {
-  .hero__cta {
-    display: block;
+@media (min-width: 1000px) {
+  .snippets__columns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
+}
+@media (min-width: 1000px) {
+  .snippets__image, .snippets__features {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+.snippets__image {
+  text-align: center;
+  margin-bottom: 60px;
+}
+@media (min-width: 1000px) {
+  .snippets__image {
+    margin-bottom: 0px;
+    margin-right: 55px;
+  }
+}
+.snippets__image img {
+  width: 100%;
+  max-width: 500px;
+}
+@media (min-width: 1000px) {
+  .snippets__image img {
+    max-width: none;
+    -webkit-transform: translateX(-55px);
+            transform: translateX(-55px);
+  }
+}
+.snippets__features {
+  text-align: center;
+}
+@media (min-width: 1000px) {
+  .snippets__features {
+    margin-left: 55px;
+    text-align: left;
+  }
+}
+.snippets__features p {
+  display: inline-block;
+  max-width: 340px;
 }
 /*# sourceMappingURL=style.css.map */
