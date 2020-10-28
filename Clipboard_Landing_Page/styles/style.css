@@ -101,6 +101,10 @@ p.small {
   line-height: 1.6;
 }
 
+img {
+  width: 100%;
+}
+
 button {
   position: relative;
   font-size: 0.875rem;
@@ -153,6 +157,7 @@ button.btnMac:hover {
   }
 }
 .hero__logo {
+  max-width: 125px;
   margin-bottom: 70px;
 }
 
@@ -188,7 +193,6 @@ button.btnMac:hover {
   }
 }
 .snippets__image img {
-  width: 100%;
   max-width: 500px;
 }
 @media (min-width: 1000px) {
