@@ -1,0 +1,15 @@
+.workflow{
+    &__features {
+        @include breakpoint-down(largeTablet) {
+            display: flex;
+            flex: 1;
+            align-items: baseline;
+        }
+        p {
+            padding: 10px;
+        }
+        img {
+            max-width: 100px;
+        }
+    }
+}
